@@ -1,0 +1,39 @@
+#import urllib
+from urllib.request import urlopen
+import bs4
+
+url = "http://WWW.NAVER.com"
+
+'''
+html = """
+<html>
+    <body>
+        <ul>
+            <li>hello</li>
+            <li>bye</li>
+            <li>welcome</li>
+        </ul>
+    </body>
+</html>
+'''
+
+html = urlopen(url)
+#html = urllib.request.urlopen(url)
+
+bsobject = bs4.BeautifulSoup(html, "html.parser")
+
+bslist = bsobject.findAll("div",{"class":"area_links"})
+
+print (bslist.
+
+#print ((bsobject.find("h3")).text)
+
+
+
+
+
+
+
+
+
+
