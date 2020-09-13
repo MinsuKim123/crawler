@@ -90,6 +90,7 @@ for i in elem:
 
 db_connection.commit()
 db_connection.close()
+driver.close()
 
 print("END")
 
