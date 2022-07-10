@@ -5,7 +5,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-wallet_address = "0x40dE8Fa4B917Ce19648CadC5E04E03d231de****"
+wallet_address = "0x40dE8Fa4B917Ce19648CadC5E04E03d231dea63c"
 url = 'https://etherscan.io/address/' + wallet_address
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(url)
