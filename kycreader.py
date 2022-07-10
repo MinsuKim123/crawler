@@ -8,7 +8,7 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
-username_kdac = 'homoon.kim@kdac.io'
+username_kdac = '****kim@kdac.io'
 password_kdac = '************gye7603!@!'
 
 # 로그인
