@@ -5,11 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import csv
-import requests
-from bs4 import BeautifulSoup
 
-username_kdac = '****kim@kdac.io'
-password_kdac = '************gye7603!@!'
+
+with open('user.txt', 'r') as x:
+    username_kdac = x.readline().rstrip()
+    password_kdac = x.readline()
 
 # 로그인
 driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -21,6 +21,7 @@ username_box.send_keys(username_kdac)
 
 password_box = driver.find_element(By.ID, "PasswordDisplay")
 password_box.send_keys(password_kdac)
+
 password_box.send_keys(Keys.RETURN)
 time.sleep(5)
 
