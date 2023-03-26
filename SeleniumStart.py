@@ -29,7 +29,7 @@ def login():
         ac.reset_actions()
         ac.move_to_element(elem)
         ac.click()
-        #ac.send_keys('zxc135')  #캐쉬에 저장된 값을 사용하므로 주석처리함
+        #ac.send_keys('')  #캐쉬에 저장된 값을 사용하므로 주석처리함
         ac.perform()
         print ("LOG:pwd input")
 
